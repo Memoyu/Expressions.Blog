@@ -1,0 +1,15 @@
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/bin/Debug/net5.0/ExpressionDemo.deps.json
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/bin/Debug/net5.0/ExpressionDemo.runtimeconfig.json
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/bin/Debug/net5.0/ExpressionDemo.runtimeconfig.dev.json
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/bin/Debug/net5.0/ExpressionDemo.dll
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/bin/Debug/net5.0/ref/ExpressionDemo.dll
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/bin/Debug/net5.0/ExpressionDemo.pdb
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.csprojAssemblyReference.cache
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.AssemblyInfoInputs.cache
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.AssemblyInfo.cs
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.csproj.CoreCompileInputs.cache
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.dll
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ref/ExpressionDemo.dll
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.pdb
+/Users/memoyu/Memoyu/WorkSpace/Learn/Expressions.Blog/Demo/ExpressionDemo/ExpressionDemo/obj/Debug/net5.0/ExpressionDemo.genruntimeconfig.cache

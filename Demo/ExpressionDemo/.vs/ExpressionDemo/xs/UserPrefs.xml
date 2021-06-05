@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{6A2B32D2-2940-4E22-8AC9-F0686D322D3F}|Default">
+  <MonoDevelop.Ide.ItemProperties.ExpressionDemo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExpressionDemo/Program.cs">
+    <Files>
+      <File FileName="ExpressionDemo/Program.cs" Line="20" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ExpressionDemo" expanded="True">
+            <Node name="ExpressionDemo" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
