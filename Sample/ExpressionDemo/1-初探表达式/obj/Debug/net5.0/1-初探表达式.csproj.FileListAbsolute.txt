@@ -1,0 +1,16 @@
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\bin\Debug\net5.0\1-初探表达式.exe
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\bin\Debug\net5.0\1-初探表达式.deps.json
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\bin\Debug\net5.0\1-初探表达式.runtimeconfig.json
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\bin\Debug\net5.0\1-初探表达式.runtimeconfig.dev.json
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\bin\Debug\net5.0\1-初探表达式.dll
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\bin\Debug\net5.0\ref\1-初探表达式.dll
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\bin\Debug\net5.0\1-初探表达式.pdb
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.csproj.AssemblyReference.cache
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.GeneratedMSBuildEditorConfig.editorconfig
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.AssemblyInfoInputs.cache
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.AssemblyInfo.cs
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.csproj.CoreCompileInputs.cache
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.dll
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\ref\1-初探表达式.dll
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.pdb
+D:\WorkSpace\examples\12-Learn\Expressions.Blog\Sample\ExpressionDemo\1-初探表达式\obj\Debug\net5.0\1-初探表达式.genruntimeconfig.cache
