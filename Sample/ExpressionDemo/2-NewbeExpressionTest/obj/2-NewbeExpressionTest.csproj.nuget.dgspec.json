@@ -1,34 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WorkSpace\\examples\\12-Learn\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj": {}
+    "E:\\.Samples\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj": {}
   },
   "projects": {
-    "D:\\WorkSpace\\examples\\12-Learn\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj": {
+    "E:\\.Samples\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WorkSpace\\examples\\12-Learn\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj",
+        "projectUniqueName": "E:\\.Samples\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj",
         "projectName": "2-NewbeExpressionTest",
-        "projectPath": "D:\\WorkSpace\\examples\\12-Learn\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj",
+        "projectPath": "E:\\.Samples\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\2-NewbeExpressionTest.csproj",
         "packagesPath": "C:\\Users\\Memoyu\\.nuget\\packages\\",
-        "outputPath": "D:\\WorkSpace\\examples\\12-Learn\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\obj\\",
+        "outputPath": "E:\\.Samples\\Expressions.Blog\\Sample\\ExpressionDemo\\2-NewbeExpressionTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
           "C:\\Users\\Memoyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://aka.ms/maui-preview/index.json": {},
+          "http://lianounuget.lianouyiyuan.com/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
