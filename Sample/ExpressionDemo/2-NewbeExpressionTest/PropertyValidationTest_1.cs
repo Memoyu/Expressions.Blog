@@ -43,7 +43,7 @@ namespace _2_NewbeExpressionTest
                     var input = new CreateClaptrapInput
                     {
                         // Name添加校验:最长长度不能超过十个字符
-                        Name = "33333",
+                        Name = "3333333333",
                         NickName = "newbe36524"
                     };
                     var (isOk, errorMessage) = Validate(input);

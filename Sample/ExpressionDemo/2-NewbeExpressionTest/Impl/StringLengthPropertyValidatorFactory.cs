@@ -9,38 +9,34 @@ namespace _2_NewbeExpressionTest.Impl
 {
     public class StringLengthPropertyValidatorFactory : PropertyValidatorFactoryBase<string>
     {
-        private static Expression<Func<string, string, ValidateResult>> CreateValidateStringMinLengthExp(int minLength)
-        {
-            return (name, value) =>
-                string.IsNullOrEmpty(value) || value.Length < minLength
-                    ? ValidateResult.Error($"Length of {name} should be great than {minLength}")
-                    : ValidateResult.Ok();
-        }
-
-        private static Expression<Func<string, string, ValidateResult>> CreateValidateStringMaxLengthExp(int maxLength)
-        {
-            return (name, value) =>
-                !string.IsNullOrEmpty(value) && value.Length > maxLength
-                    ? ValidateResult.Error($"Length of {name} should be less than {maxLength}")
-                    : ValidateResult.Ok();
-        }
 
         protected override IEnumerable<Expression> CreateExpressionCore(CreatePropertyValidatorInput input)
         {
             var propertyInfo = input.PropertyInfo;
+            // 获取属性的MinLengthAttribute
             var minlengthAttribute = propertyInfo.GetCustomAttribute<MinLengthAttribute>();
-            
             if (minlengthAttribute != null)
             {
-                yield return CreateValidateExpression(input,
-                    CreateValidateStringMinLengthExp(minlengthAttribute.Length));
+                // 获取最小长度
+                var minLength = minlengthAttribute.Length;
+                // 构建校验属性值长度LambdaExpression
+                Expression<Func<string, bool>> checkFunc = value => string.IsNullOrEmpty(value) || value.Length < minLength;
+                // 构建错误信息LambdaExpression
+                Expression<Func<string, string>> errorMsgFunc = name => $"{name} 值长度应大于 {minLength}";
+                // 组装具体校验过程Expression
+                var checkExp = ExpressionHelper.CreateCheckerExpression(typeof(string), checkFunc, errorMsgFunc);
+                // 构建校验Expression
+                yield return ExpressionHelper.CreateValidateExpression(input, checkExp);
             }
 
             var maxlengthAttribute = propertyInfo.GetCustomAttribute<MaxLengthAttribute>();
             if (maxlengthAttribute != null)
             {
-                yield return CreateValidateExpression(input,
-                    CreateValidateStringMaxLengthExp(maxlengthAttribute.Length));
+                var maxLength = maxlengthAttribute.Length;
+                Expression<Func<string, bool>> checkFunc = value => !string.IsNullOrEmpty(value) && value.Length > maxLength;
+                Expression<Func<string, string>> errorMsgFunc = name => $"{name} 值长度应小于 {maxLength}";
+                var checkExp = ExpressionHelper.CreateCheckerExpression(typeof(string), checkFunc, errorMsgFunc);
+                yield return ExpressionHelper.CreateValidateExpression(input, checkExp);
             }
         }
     }

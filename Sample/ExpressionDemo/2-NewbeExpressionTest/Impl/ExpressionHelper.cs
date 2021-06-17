@@ -15,9 +15,9 @@ namespace _2_NewbeExpressionTest.Impl
         /// 构建校验表达式
         /// </summary>
         /// <param name="input"></param>
-        /// <param name="validateFuncExp"></param>
+        /// <param name="checkFuncExp"></param>
         /// <returns></returns>
-        public static Expression CreateValidateExpression(CreatePropertyValidatorInput input, Expression validateFuncExp)
+        public static Expression CreateValidateExpression(CreatePropertyValidatorInput input, Expression checkFuncExp)
         {
             // 获取input属性信息
             var inputPropertyInfo = input.PropertyInfo;
@@ -32,7 +32,7 @@ namespace _2_NewbeExpressionTest.Impl
             var propExp = Expression.Property(convertInputExp, inputPropertyInfo);
 
             // 构建 InvocationExpression（表示调用具有指定变量的lambda表达式）
-            var validateInvocationExp = Expression.Invoke(validateFuncExp, nameExp, propExp, convertInputExp);
+            var validateInvocationExp = Expression.Invoke(checkFuncExp, nameExp, propExp, convertInputExp);
 
             // 执行校验，并将结果赋值到input中的ResultExpression
             var assignValidateResultExp = Expression.Assign(input.ResultExpression, validateInvocationExp);
@@ -45,7 +45,7 @@ namespace _2_NewbeExpressionTest.Impl
             var ifThenExp =
                 Expression.IfThen(conditionExp, Expression.Return(input.ReturnLabel, input.ResultExpression));
 
-            var result = Expression.Block(new[] { input. ResultExpression }, assignValidateResultExp, ifThenExp);
+            var result = Expression.Block(new[] { input.ResultExpression }, assignValidateResultExp, ifThenExp);
             return result;
         }
 
@@ -70,7 +70,7 @@ namespace _2_NewbeExpressionTest.Impl
 
             // 构建错误信息表达式
             var errorMsgFunc = errorMsgFuncArg.Invoke(inputExp);
-            var errorMsgExp = Expression.Invoke(errorMsgFunc);
+            var errorMsgExp = Expression.Invoke(errorMsgFunc, nameExp);
 
             // 构建返参实例化表达式
             var errorResultExp = Expression.Call(typeof(ValidateResult), nameof(ValidateResult.Error), Array.Empty<Type>(), errorMsgExp);
@@ -80,7 +80,7 @@ namespace _2_NewbeExpressionTest.Impl
             var resultExp = Expression.Variable(typeof(ValidateResult), "result");
             // 构建校验结果判断并赋值ValidateResult
             var judgeResultExp = Expression.IfThenElse(checkExp,
-                Expression.Assign(resultExp, errorMsgExp),
+                Expression.Assign(resultExp, errorResultExp),
                 Expression.Assign(resultExp, okResultExp));
             // 组装判断、赋值表达式
             var bodyExp = Expression.Block(new[] { resultExp }, judgeResultExp, resultExp);
@@ -104,5 +104,10 @@ namespace _2_NewbeExpressionTest.Impl
             CreateCheckerExpression(valueType,
                 inputExp => checkFunc,// 此处构建的func入参inputExp并没有在checkFunc中使用，仅为了兼顾 CreateCheckerExpression 的通用性
                 inputExp => errorMsgFunc);
+
+        public static Expression CreateCheckerExpression(Type valueType, Expression checkFunc, Func<Expression, Expression> errorMsgFuncFactory) =>
+            CreateCheckerExpression(valueType,
+                inputExp => checkFunc,
+                errorMsgFuncFactory);
     }
 }

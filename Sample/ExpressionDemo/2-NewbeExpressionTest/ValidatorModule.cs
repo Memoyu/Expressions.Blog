@@ -24,6 +24,10 @@ namespace _2_NewbeExpressionTest
             builder.RegisterType<StringLengthPropertyValidatorFactory>()
                 .As<IPropertyValidatorFactory>()
                 .SingleInstance();
+
+            builder.RegisterType<EnumerablePropertyValidatorFactory>()
+                .As<IPropertyValidatorFactory>()
+                .SingleInstance();
         }
     }
 }
