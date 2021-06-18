@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\Memoyu\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Memoyu\\.nuget\\packages"
-    ]
-  }
-}
