@@ -28,6 +28,10 @@ namespace _2_NewbeExpressionTest
             builder.RegisterType<EnumerablePropertyValidatorFactory>()
                 .As<IPropertyValidatorFactory>()
                 .SingleInstance();
+
+            builder.RegisterType<EnumRangPropertyValidatorFactory>()
+               .As<IPropertyValidatorFactory>()
+               .SingleInstance();
         }
     }
 }
